@@ -10,7 +10,7 @@
     position: absolute;
     right: 30px;
     overflow-y: scroll;
-    width: 100%;
+    width: 100vw;
 }
 
 @media (max-width: 600px) and (orientation: landscape) {
@@ -29,6 +29,6 @@
         height: 100vh;
         position: relative; /* Use relative positioning to keep the content in flow */
         overflow-y: scroll;
-        width: 100vh;
+        width: 100vw;
     }
 }
