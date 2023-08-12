@@ -10,25 +10,19 @@
     position: absolute;
     right: 30px;
     overflow-y: scroll;
-    width: 100vw;
+    width: 100%;
 }
 
-@media (max-width: 600px) and (orientation: landscape) {
+@media (max-width: 600px) {
     body {
-        transform: rotate(0deg); /* Reset the rotation */
-        transform-origin: center top; /* Adjust the transform origin */
-        width: 100vw;
-        height: 100vh;
-        overflow-x: hidden;
-        position: fixed; /* Use fixed positioning for covering the screen */
-        top: 0; /* Align to the top */
-        left: 0;
+      transform: rotate(-90deg);
+      transform-origin: left top;
+      width: 100vh;
+      height: 100vw;
+      overflow-x: hidden;
+      position: absolute;
+      top: 100%;
+      left: 0;
     }
-
-    .all-container {
-        height: 100vh;
-        position: relative; /* Use relative positioning to keep the content in flow */
-        overflow-y: scroll;
-        width: 100vw;
-    }
-}
+  
+  }
