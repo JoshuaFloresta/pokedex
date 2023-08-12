@@ -1,0 +1,34 @@
+.app-container{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(115deg,#fff1ff 48%, #f3533b 48% 55%, #fb7248 55%);
+}
+
+.all-container{
+    height: 80vh;
+    top: 80px;
+    position: absolute;
+    right: 30px;
+    overflow-y: scroll;
+    width: 100%;
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    body {
+        transform: rotate(0deg); /* Reset the rotation */
+        transform-origin: center top; /* Adjust the transform origin */
+        width: 100vw;
+        height: 100vh;
+        overflow-x: hidden;
+        position: fixed; /* Use fixed positioning for covering the screen */
+        top: 0; /* Align to the top */
+        left: 0;
+    }
+
+    .all-container {
+        height: 100vh;
+        position: relative; /* Use relative positioning to keep the content in flow */
+        overflow-y: scroll;
+        width: 100%;
+    }
+}

@@ -1,0 +1,19 @@
+.title{
+    background: linear-gradient(115deg, #ddd3d8 57.7%, black 57.7%);
+}
+
+
+.caught-seen{
+    display: flex;
+    align-items: center;
+}
+
+.caught, .seen{
+    display: flex;
+    align-items: center;
+    background-color: #5a5a58;
+    border-radius: 10px;
+    margin-left: 20px;
+    padding: 5px 20px;
+    color: white;
+}
