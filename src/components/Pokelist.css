@@ -29,6 +29,6 @@
         height: 100vh;
         position: relative; /* Use relative positioning to keep the content in flow */
         overflow-y: scroll;
-        width: 100%;
+        width: 100vh;
     }
 }
