@@ -26,6 +26,8 @@ export default function Pokelist() {
         getAllPokemons();
     },[]);
 
+    
+
 
   return (
     <div className='app-container'>

@@ -5,8 +5,9 @@
  
 }
 
-@media (min-width: 350px) and (max-width: 666px) and (orientation: landscape) {
-  body {
+
+@media screen and (max-width: 899px) {
+  .landscape-mode {
     transform: rotate(-90deg);
     transform-origin: left top;
     width: 100vh;
@@ -15,18 +16,6 @@
     position: absolute;
     top: 100%;
     left: 0;
-    overflow: hidden; 
   }
-
-  .landscape-wrapper {
-    width: 100vh;
-    height: 100vw; 
-    transform-origin: left top;
-    transform: rotate(-90deg) translateY(-100%);
-    position: absolute;
-    top: 0;
-    left: 0;
-    overflow: auto; 
 }
 
-}
