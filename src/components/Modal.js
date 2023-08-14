@@ -9,7 +9,7 @@ export default function Modal({
   name,
   id,
   image,
-  type,
+  types,
   height,
   weight,
   stats,
@@ -24,7 +24,8 @@ export default function Modal({
     >
       <div
         onClick={onClick}
-        className="absolute top-12 right-12 rounded-full px-2 py-1 font-black cursor-pointer"  >
+        className="absolute top-5 right-9 rounded-full bg-white  px-3 py-[5px] font-black cursor-pointer"
+      >
         X
       </div>
 
@@ -33,42 +34,67 @@ export default function Modal({
           src={image}
           alt={name}
           style={{ filter: "drop-shadow(2px 4px 12px black" }}
+          id="modal_show"
         />
       </div>
 
-      <div
-        className="flex items-center justify-around flex-col w-[450px] h-[500px]">
+      <div className="items-center grid grid-cols-1 lg:w-[450px] lg:h-[500px] w-[800px]">
         <div className="stat-container-title">
-          <img src={image} alt={name} className="image-title" />
-          <p className="text-white">No. {id}</p>
-          <p>{name}</p>
-          <img src={Pokeball_black} alt="pokeball" className="pokeball-title" />
+          <div className="flex w-1/2 align-middle items-center">
+            <img
+              src={image}
+              alt={name}
+              className="image-title"
+              style={{ width: "60px" }}
+            />
+            <p className="font-extrabold text-black">No. {id}</p>
+          </div>
+          <div className="flex justify-between w-1/2">
+            <p>{name}</p>
+            <img
+              src={Pokeball_black}
+              alt="pokeball"
+              className="pokeball-title"
+              style={{ width: "40px" }}
+            />
+          </div>
         </div>
 
-        <div style={{ display: "flex", width: "100%" }}>
-          <div
-            className="state-left bg-white text-center"
-          >
-            <p>Type</p>
-            <p>Height</p>
-            <p>Weight</p>
-          </div>
-          <div className="stats-right bg-white">
-            <p>{type}</p>
-            <p>{height}0 cm</p>
-            <p>{weight} lbs</p>
+        <div className="flex w-full mt-3">
+          <div className="bg-white text-center w-[85%] lg:w-full" id="attributes">
+            <div className="flex justify-around border-b border-gray-400">
+              <p className="text-center">Type</p>
+              <div className="flex justify-center">{types.map((type) => (
+              <p key={type} className="capitalize mx-1">
+               {type}
+             </p>
+              ))}
+              </div>
+            </div>
+            <div className="flex justify-around border-b border-gray-400">
+              <p>Height</p> <p>{height}0 cm</p>
+            </div>
+            <div className="flex justify-around">
+              <p>Weight</p> <p>{weight} lbs</p>
+            </div>
           </div>
         </div>
-        <div className="base-stats">
-          <div>
-            {statsName.map((stats) => (
-              <p className="stats">{stats}</p>
+
+
+        <div className="flex bg-white w-[85%] lg:w-full text-center mt-3" id="stats-body">
+          <div className="w-1/2">
+            {statsName.map((statName, index) => (
+              <p key={statName} className="stats">
+                {statName}
+              </p>
             ))}
           </div>
 
-          <div>
-            {stats.map((stats) => (
-              <p className="stats">{stats}</p>
+          <div className="w-1/2">
+            {stats.map((stat, index) => (
+              <p key={index} className="stats">
+                {stat}
+              </p>
             ))}
           </div>
         </div>

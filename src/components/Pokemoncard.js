@@ -7,7 +7,7 @@ export default function Pokemoncard({
   id,
   name,
   image,
-  type,
+  types,
   weight,
   height,
   stats, 
@@ -32,7 +32,9 @@ export default function Pokemoncard({
         <div className="show">
             <div className="stat-container-title">
               <img src={image} alt={name} className="image-title"/>
-              <p style={{width: "180px",color:"black"}}>No. {id}</p>
+             <div>
+             <p className="text-black">No. {id}</p>
+             </div>
               <p>{name}</p>
               <img src={Pokeball} alt={Pokeball} className="pokeball-title"/>
             </div>
@@ -46,12 +48,12 @@ export default function Pokemoncard({
       onMouseLeave={() =>setIsShown(false)}
       onClick={modalHandler}
       >
-      <img src={image} alt={name}
-      style={{maxHeight:"50px",marginRight:"10px",width:"50px"}}/>
+      <img src={image} alt={name} className="mr-5"
+      style={{maxHeight:"50px",width:"50px"}}/>
       <p style={{width:"270px"}}>No. {id}</p>
       <p>{name}</p>
-      <img src={Pokeball} alt="pokeball"
-      style={{marginLeft:"auto" , width:"40px"}} />
+      <img src={Pokeball} alt="pokeball" className=""
+      style={{width:"40px"}} />
 
       </div>
       {modalIsOpen && (
@@ -62,7 +64,7 @@ export default function Pokemoncard({
         weight={weight}
         stats={stats}
         statsName={statsName}
-        type={type}
+        types={types}
         onClick = {closeModalHandler}
         />
       )}
