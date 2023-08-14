@@ -7,8 +7,8 @@
     }
     
     .all-container{
-        height: 90vh;
-        top: 80px;
+        height: 80vh;
+        top: 90px;
         position: absolute;
         right: 30px;
         overflow-y: scroll ;
