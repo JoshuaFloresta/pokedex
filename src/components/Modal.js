@@ -47,7 +47,7 @@ export default function Modal({
               className="image-title"
               style={{ width: "60px" }}
             />
-            <p className="font-extrabold text-black"> {id}</p>
+            <p className="text-black">No. <span id="entry"> {id}</span></p>
           </div>
           <div className="flex justify-between w-1/2">
             <p>{name}</p>

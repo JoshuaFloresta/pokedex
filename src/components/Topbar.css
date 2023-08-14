@@ -1,7 +1,18 @@
 .title{
     background: linear-gradient(115deg, #ddd3d8 57.7%, black 57.7%);
+    width: 100%;
+    height: 56px;
+    top:32px;
+    z-index: 10;
 }
 
+
+
+@media (min-width: 350px) and (max-width: 900px) and (orientation: landscape) {
+    .title{
+        top:0;
+    }
+}
 
 .caught-seen{
     display: flex;

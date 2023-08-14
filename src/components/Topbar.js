@@ -6,7 +6,7 @@ import pokeball_black from "../images/black-pokeball.png";
 export default function Topbar() {
   return (
     <div>
-      <div className="title flex items-center justify-around absolute top-8 w-full h-14 z-10">
+      <div className="title flex items-center justify-around absolute">
         <div className="flex justify-center items-center w-2/5 lg:-ms-16">
           <p className="text-3xl font-bold">Pokedex</p>
           <div className="caught-seen">
