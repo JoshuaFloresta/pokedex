@@ -35,33 +35,22 @@ export default function Modal({
           alt={name}
           style={{ filter: "drop-shadow(2px 4px 12px black" }}
           id="modal_show"
+          className="ms-10 lg:ms-0"
         />
       </div>
 
-      <div className="items-center grid grid-cols-1 lg:w-[450px] lg:h-[500px] w-[800px]">
-        <div className="stat-container-title">
-          <div className="flex w-1/2 align-middle items-center">
-            <img
-              src={image}
-              alt={name}
-              className="image-title"
-              style={{ width: "60px" }}
-            />
-            <p className="text-black">No. <span id="entry"> {id}</span></p>
-          </div>
-          <div className="flex justify-between w-1/2">
+      <div className="items-center grid grid-cols-1 w-[800px] lg:w-[500px] ">
+      <div className="stat-container-title_modal mt-10">
+            <img src={image} alt={name} className="image-title" />
+            <div>
+              <p className="text-black">No. <span id="entry"> {id}</span></p>
+            </div>
             <p>{name}</p>
-            <img
-              src={Pokeball_black}
-              alt="pokeball"
-              className="pokeball-title"
-              style={{ width: "40px" }}
-            />
+            <img src={Pokeball_black} alt={Pokeball} className="pokeball-title" />
           </div>
-        </div>
 
         <div className="flex w-full mt-3">
-          <div className="bg-white text-center w-[85%] lg:w-full" id="attributes">
+          <div className="bg-white text-center w-[80%] lg:w-full " id="attributes">
             <div className="flex justify-around border-b border-gray-400">
               <p className="text-center">Type</p>
               <div className="flex justify-center">{types.map((type) => (
@@ -81,7 +70,7 @@ export default function Modal({
         </div>
 
 
-        <div className="flex bg-white w-[85%] lg:w-full text-center mt-3" id="stats-body">
+        <div className="flex bg-white w-[80%] lg:w-full text-center mt-3" id="stats-body">
           <div className="w-1/2">
             {statsName.map((statName, index) => (
               <p key={statName} className="stats">
@@ -98,6 +87,7 @@ export default function Modal({
             ))}
           </div>
         </div>
+        
       </div>
     </div>
   );
