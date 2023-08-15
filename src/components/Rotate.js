@@ -13,7 +13,7 @@ function LottieAnimation() {
         style={{ width: '30vw', height: '30vh', filter:'brightness(70%)' }}
       />
 
-      <h1 className='mt-12 text-lg font-medium text-white'>Rotate your Phone</h1>
+      <h1 className='mt-12 text-lg font-medium text-white'>Rotate Your Device</h1>
     </div>
   );
 }
