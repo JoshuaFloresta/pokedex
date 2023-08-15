@@ -24,7 +24,7 @@ export default function Topbar() {
                 alt="pokeball"
                 className="w-8 mr-2"
               />
-              <p className="text-sm">649</p>
+              <p className="text-sm">1000</p>
             </div>
           </div>
         </div>

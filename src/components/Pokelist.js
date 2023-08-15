@@ -9,7 +9,7 @@ export default function Pokelist() {
     useEffect(() => {
         const getAllPokemons = async () => {
             try {
-                const res = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=600&offset=0");
+                const res = await axios.get("https://pokeapi.co/api/v2/pokemon?limit=1000&offset=0");
                 const data = res.data;
 
                 const pokemonPromises = data.results.map(async (pokemon) => {
