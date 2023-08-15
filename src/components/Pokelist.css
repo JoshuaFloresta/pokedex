@@ -7,7 +7,7 @@
     }
     
     .all-container{
-        height: calc(100vh - 90px);
+        height: calc(100vh - 150px);
         position: absolute;
         right: 30px;
         overflow-y: scroll ;
@@ -29,7 +29,7 @@
     }
     
     .all-container{
-        height: calc(100vh - 52px);
+        height: calc(100vh - 100px);
         overflow-y: scroll;
         width: 100%;
         top: 50px;
