@@ -4,3 +4,13 @@
   box-sizing: border-box;
  
 }
+
+@media (min-width: 350px) and (max-width: 900px) and (orientation: portrait) {
+  #topbar{
+    display: none;
+  }
+
+  #bottombar{
+    display: none;
+  }
+}

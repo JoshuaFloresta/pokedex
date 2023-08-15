@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Pokelist.css';
 import PokemonCard from './Pokemoncard';
+import Rotate from './Rotate'
 
 export default function Pokelist() {
     const [allPokemons, setAllPokemons] = useState([]);
@@ -28,6 +29,11 @@ export default function Pokelist() {
     }, []);
 
     return (
+        <div>
+            <div id="rotate">
+                <Rotate/>
+            </div>
+        
         <div className='app-container'>
             <div className="pokemon-container">
                 <div className="all-container">
@@ -47,5 +53,6 @@ export default function Pokelist() {
                 </div>
             </div>
         </div>
+    </div>
     );
 }
