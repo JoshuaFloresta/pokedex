@@ -25,7 +25,7 @@
     }
     
     .all-container{
-        height: 100vh;
+        height: calc(100vh - 44px);
         overflow-y: scroll;
         width: 100%;
     }
