@@ -32,9 +32,8 @@
 
         
     .image-title{
-        width: 50px;
+        width: 70px;
         min-height: 60px;
-        margin-right: 10px;
     }
 
     .pokeball-title{
@@ -99,7 +98,7 @@
     }
 
     #modal_show{
-        width: 60%;
+        width: 50%;
     }
 }
 
