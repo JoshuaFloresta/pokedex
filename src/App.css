@@ -23,6 +23,7 @@
 
   #bottombar{
     bottom: calc(100vh- 116vh);
+    margin-top: 10px;
   }
 }
 
