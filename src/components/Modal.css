@@ -62,7 +62,7 @@
         
     .stat-container-title{
         font-size: clamp(14px, 2vw, 19px);
-        width: clamp(80%, 3vw, 100%);
+        width: clamp(90%, 3vw, 100%);
     }
 
     .stat-container-title_modal{
