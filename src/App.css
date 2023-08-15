@@ -5,6 +5,10 @@
  
 }
 
+#bottombar{
+  bottom: 0;
+}
+
 @media (min-width: 350px) and (max-width: 900px) and (orientation: portrait) {
   #topbar{
     display: none;
@@ -14,3 +18,11 @@
     display: none;
   }
 }
+
+@media (min-width: 350px) and (max-width: 900px) and (orientation: landscape) {
+
+  #bottombar{
+    bottom: calc(100vh- 110vh);
+  }
+}
+
