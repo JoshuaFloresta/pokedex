@@ -25,7 +25,7 @@
     }
     
     .all-container{
-        height: 80vh;
+        height: 74vh;
         top: 50px;
         position: absolute;
         right: 30px;
@@ -34,22 +34,3 @@
     }
     }
         
-    @media (min-width: 350px) and (max-width: 900px) and (orientation: portrait) {
-        body{
-            display: none;
-        }
-    }
-
-
-    @media screen and (max-width: 900px) and (min-width: 350px) {
-        body {
-            transform: rotate(90deg);
-            transform-origin: left top;
-            width: 100vh; 
-            height: 100vw;
-            overflow-x: hidden;
-            position: fixed;
-            top: 0;
-            left: 0;
-        }
-    }
