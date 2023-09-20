@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Demo
+
+You can check out the live demo of my portfolio website [here](https://pokedex-steel-eight.vercel.app/).
+
 ## Available Scripts
 
 In the project directory, you can run:
